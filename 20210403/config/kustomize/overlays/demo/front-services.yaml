@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vote
+spec:
+  ports:
+  - name: "vote-service"
+    port: 5000
+    targetPort: 80
+    nodePort: 31010
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: result
+spec:
+  ports:
+  - name: "result-service"
+    port: 5001
+    targetPort: 80
+    nodePort: 31011

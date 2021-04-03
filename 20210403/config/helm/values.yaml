@@ -1,0 +1,6 @@
+vote:
+  port: 31002
+result:
+  port: 31003
+worker:
+  image: lucj/voting:worker.java
